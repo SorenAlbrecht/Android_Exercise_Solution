@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="kis_white_opacity">#ccffffff</color>
+    <color name="grey_04">#efefef</color>
+    <color name="warning">#ffca28</color>
+
+    <color name="alert">#f44336</color>
+    <color name="kaufland_red">#e10915</color>
+    <color name="grey_01">#424242</color>
+    <color name="grey_01_opacity">#CC424242</color>
+    <color name="grey_02">#8e8e8e</color>
+    <color name="grey_03">#d6d6d6</color>
+    <color name="grey_05">#424242</color>
+    <color name="accent">#2196f3</color>
+    <color name="highlight">#bcddfd</color>
+    <color name="ok">#4ab54f</color>
+    <color name="wg_obst_gemuese">#509e2f</color>
+    <color name="wg_milchprodukte">#eaaa00</color>
+    <color name="wg_drogerie">#6bbbae</color>
+    <color name="wg_naehrmittel">#e57200</color>
+    <color name="wg_snacks">#c6aa76</color>
+    <color name="wg_wein">#7e2d40</color>
+    <color name="wg_getraenke">#007a53</color>
+    <color name="wg_fleisch">#101820</color>
+    <color name="wg_fisch">#002677</color>
+    <color name="wg_backwaren">#623b2a</color>
+    <color name="wg_aus_aller_welt">#6191b4</color>
+    <color name="wg_tiernahrung">#833177</color>
+    <color name="wg_diese_woche_neu">#3f4444</color>
+    <color name="wg_non_food">#647692</color>
+    <color name="wg_tiefkuehl">#298fc2</color>
+    <color name="wg_bulkfood">#c58b68</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">@color/grey_03</color>
+</resources>

@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.41'
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        classpath 'io.fabric.tools:gradle:1.+'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+ext {
+    androidAnnotations_version = '4.6.0'
+    couchbaseEntity_version = '2.1.2'
+    nav_version = "2.1.0-rc01"
+    couroutines_version = "1.3.0-RC"
+    project_versionname = versionname()
+
+    moduleDependencies = [
+            androidAnnotations      : "org.androidannotations:androidannotations:${androidAnnotations_version}",
+            androidAnnotationsApi   : "org.androidannotations:androidannotations-api:${androidAnnotations_version}",
+            couchbaseEntityApi      : "com.github.Kaufland.andcouchbaseentity:couchbase-entity-api:${couchbaseEntity_version}",
+            couchbaseEntity         : "com.github.Kaufland.andcouchbaseentity:couchbase-entity:${couchbaseEntity_version}",
+            couchbaseEntityConnector: "com.github.Kaufland.andcouchbaseentity:couchbase-entity-connector:${couchbaseEntity_version}@aar",
+            navigationFragment      : "androidx.navigation:navigation-fragment-ktx:$nav_version",
+            navigationUI            : "androidx.navigation:navigation-ui-ktx:$nav_version",
+            coroutinesCore          : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$couroutines_version",
+            coroutinesAndroid       : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$couroutines_version"
+    ]
+
+    moduleTestDependencies = [
+            junit: "junit:junit:4.12"
+    ]
+}
+
+def versionname() {
+
+    if (!System.getenv('CI_BUILD')) {
+        // don't care
+        return "dev_build"
+    }
+    String gitBranchName = "git rev-parse --abbrev-ref HEAD".execute().text.trim()
+
+    String[] segments = gitBranchName.split("/")
+    return segments[segments.length - 1]
+}
+
+allprojects {
+
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "https://mobile.maven.couchbase.com/maven2/dev/"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

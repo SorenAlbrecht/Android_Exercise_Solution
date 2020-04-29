@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidTestSolution</string>
+    <string name="header_title">Bestandsdurchgang</string>
+    <string name="item1_name">Tiernahrung</string>
+    <string name="item2_name">Pflanzen</string>
+    <string name="item3_name">Nährmittel</string>
+    <string name="item4_name">Obst &amp; Gemüse</string>
+</resources>

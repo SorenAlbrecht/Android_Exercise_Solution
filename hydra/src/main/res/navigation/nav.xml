@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav" app:startDestination="@id/splashFragment">
+
+    <fragment android:id="@+id/splashFragment" android:name="kaufland.com.hydra.SplashFragment_"
+              android:label="SplashFragment">
+        <action android:id="@+id/action_splashFragment_to_statusFragment" app:destination="@id/statusFragment"/>
+        <action android:id="@+id/action_splashFragment_to_loginFragment" app:destination="@id/loginFragment"/>
+    </fragment>
+    <fragment android:id="@+id/statusFragment" android:name="kaufland.com.hydra.StatusFragment_"
+              android:label="status_fragment" tools:layout="@layout/status_fragment"/>
+    <fragment android:id="@+id/loginFragment" android:name="kaufland.com.hydra.LoginFragment_"
+              android:label="LoginFragment">
+        <deepLink android:id="@+id/deepLink" app:uri="com.fwws.kaufland://hydra/login" android:autoVerify="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,2 @@
+include ':hydra', ':hydraapi',  'uicommon'
+include ':androidtestsolution'

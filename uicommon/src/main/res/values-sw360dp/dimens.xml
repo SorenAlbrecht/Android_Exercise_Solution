@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="calculator_input_edit_height">70dp</dimen>
+    <dimen name="calculator_input_edit_textsize">20sp</dimen>
+</resources>

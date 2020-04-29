@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgeIconLayout_">
+
+        <attr name="vBadgeGravity" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="circleRightTop" value="1"/>
+            <enum name="circleRightBottom" value="2"/>
+            <enum name="ovalRightTop" value="3"/>
+            <enum name="ovalRightBottom" value="4"/>
+            <enum name="circleRightCenter" value="6"/>
+        </attr>
+        <attr name="vBadgeDependOnView" format="reference"/>
+        <attr name="vBadgeCount" format="string"/>
+        <attr name="vBadgeRadius" format="dimension"/>
+        <attr name="vBadgePaddingRightLeft" format="dimension"/>
+        <attr name="vBadgePaddingTopBottom" format="dimension"/>
+        <attr name="vBadgeTextPadding" format="dimension"/>
+        <attr name="vBadgeFontSize" format="dimension"/>
+        <attr name="vBadgeBorderColor" format="color"/>
+        <attr name="vBadgeFillColor" format="color"/>
+        <attr name="vBadgeCountColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextButton_">
+        <attr name="vText" format="string"/>
+        <attr name="vIcon" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:fontFamily="@font/kaufland_bold" app:fontFamily="@font/kaufland_bold"
+              android:id="@+id/secured_key_text" android:text="@string/secured_key"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:id="@+id/secured_key_value"
+              app:layout_constraintTop_toTopOf="@+id/secured_key_text"
+              app:layout_constraintBottom_toBottomOf="@+id/secured_key_text" app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="32dp"
+    />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:fontFamily="@font/kaufland_bold" app:fontFamily="@font/kaufland_bold"
+              android:id="@+id/device_text" android:text="@string/device"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/secured_key_text"
+              app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:id="@+id/device_value"
+              app:layout_constraintTop_toTopOf="@+id/device_text"
+              app:layout_constraintBottom_toBottomOf="@+id/device_text"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="32dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:fontFamily="@font/kaufland_bold" app:fontFamily="@font/kaufland_bold"
+              android:id="@+id/screen_text" android:text="@string/screen"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/device_text" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:id="@+id/screen_value"
+              app:layout_constraintTop_toTopOf="@+id/screen_text"
+              app:layout_constraintBottom_toBottomOf="@+id/screen_text" app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="32dp"
+    />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:fontFamily="@font/kaufland_bold" app:fontFamily="@font/kaufland_bold"
+              android:id="@+id/screen_density_text" android:text="@string/screen_density"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/screen_text" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:id="@+id/screen_density_value"
+              app:layout_constraintTop_toTopOf="@+id/screen_density_text"
+              app:layout_constraintBottom_toBottomOf="@+id/screen_density_text"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="32dp"
+    />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:fontFamily="@font/kaufland_bold" app:fontFamily="@font/kaufland_bold"
+              android:id="@+id/sdk_text" android:text="@string/android"
+              android:layout_marginTop="8dp"
+              app:layout_constraintTop_toBottomOf="@+id/screen_density_text" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp"
+              android:id="@+id/sdk_value"
+              app:layout_constraintTop_toTopOf="@+id/sdk_text"
+              app:layout_constraintBottom_toBottomOf="@+id/sdk_text" app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="32dp"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
